@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:orientation="vertical"
+        android:padding="0dp"
+
+        android:weightSum="3"
+        tools:context="com.example.suhail.loginattempt1.Activities.UserSettingsActivity">
+
+        <include
+            android:id="@+id/app_bar_user_settings"
+            layout="@layout/app_bar">
+
+
+        </include>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--
+                 <TextView
+                     android:id="@+id/title_user_update_data"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:padding="10dp"
+                     android:text="Update User Data"
+                     android:textSize="25dp" />
+                  -->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/contact_and_email_cannot_be_changed"
+                    android:textColor="@color/wrong_field" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Contact : "
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/put_contact_user_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Data not available"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Email : "
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/put_email_user_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Data not available"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/Class"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+            <Spinner
+                android:id="@+id/class_spinner_user_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+        </android.support.v7.widget.CardView>
+
+<android.support.v4.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="5dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_password_user_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/change_password"
+                    android:textColor="@color/alert_green"
+                    android:textSize="20dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/reset_password_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Old Password : "
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/old_password_user_setting"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type old password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/check_old_pass_user_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Verify"
+                        android:textColor="@color/alert_color" />
+
+
+                    <TextView
+                        android:id="@+id/wrong_password_user_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Wrong Passowrd"
+                        android:textColor="@color/alert_color" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reset_password_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="New Password : "
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/new_password_user_setting"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type new password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reset_password_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Confirm New Password : "
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/confirm_new_password_user_setting"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Retype new password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/pass_smatch_user_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Password match"
+                        android:textColor="@color/alert_green" />
+
+                    <TextView
+                        android:id="@+id/pass_mismatch_user_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Password dosen't match"
+                        android:textColor="@color/alert_color" />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                    android:id="@+id/update_password_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    card_view:cardBackgroundColor="#fff"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:textStyle="bold"
+                            android:id="@+id/update_button"
+                            android:padding="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:text="Update Password"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Space
+
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:id="@+id/streamlayout_user_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/stream_group_user_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:id="@+id/optionallayout_user_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <Space
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+     <!---  <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="20dp"
+                android:text="Update Data"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+-->
+        <Space
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" Delete Account"
+                android:textColor="@color/alert_green"
+                android:textSize="20dp" />
+
+
+
+        </android.support.v7.widget.CardView>
+        <Space
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+</ScrollView>
